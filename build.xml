@@ -46,7 +46,7 @@
 		</javac>
 	</target>
 
-	<target name="test" depends="compile">
+	<target name="test" depends="compile" unless="test.skip">
 		<property name="junit.dir" value="build/classes/junit" />
 		<mkdir dir="${junit.dir}" />
 		<junit printsummary="yes" showoutput="yes" failureproperty="test.fail" fork="yes" maxmemory="1024m" clonevm="true">
