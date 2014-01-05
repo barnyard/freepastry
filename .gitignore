@@ -8,3 +8,4 @@ reports/*
 .project
 .classpath
 /bin
+junit*properties
